@@ -1,37 +1,19 @@
 {
   "name": "supermodel",
-  "description": "",
-  "version": "",
-  "babelMacros": {
-    "twin": {}
-  },
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.7.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
-    "feather-icons": "^4.28.0",
-    "framer-motion": "^1.10.3",
+    "emotion-theming": "^10.0.27",
     "next": "latest",
-    "next-images": "^1.4.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-components": "^5.1.0",
-    "twin.macro": "^1.0.0",
-    "use-in-view": "^1.0.15"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
-    "prettier": "^2.0.5"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "keywords": []
+    "react-dom": "^16.13.1"
+  }
 }
