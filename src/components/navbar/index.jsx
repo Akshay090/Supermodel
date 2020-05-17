@@ -17,7 +17,6 @@ const Navbar = (props) => {
         justify="space-between"
       >
         <Logo />
-
         <Flex alignItems="center">{children}</Flex>
       </Flex>
     </Header>
@@ -34,7 +33,7 @@ export const Header = (props) => (
   />
 );
 
-Navbar.PropType = {
+Navbar.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
