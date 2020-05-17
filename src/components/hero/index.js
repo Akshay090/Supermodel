@@ -9,7 +9,7 @@ import {
   useColorMode,
 } from "@chakra-ui/core";
 
-import HeroImage from "../../assets/HeroImage.svg"
+// import HeroImage from "../../assets/HeroImage.svg"
 
 const Hero = () => {
   const theme = useTheme();
@@ -43,8 +43,9 @@ const Hero = () => {
           </Text>
         </Stack>
         <Image
-          height={["15rem", "15rem", "28rem", "28rem"]}
+          height={["15rem", "15rem", "25rem", "25rem"]}
           max-width="48rem"
+          pt="2rem"
           src="https://res.cloudinary.com/supermodel/image/upload/v1589546581/Supermodel_website_assets/hero_img_yxyeru.svg"
         />
       </Flex>
