@@ -17,7 +17,12 @@ const Navbar = (props) => {
 
   return (
     <Header bg={bg[colorMode]} {...props}>
-      <Flex size="100%" px="6" align="center" justify="space-between">
+      <Flex
+        size="100%"
+        px={["3", "3", "6", "6"]}
+        align="center"
+        justify="space-between"
+      >
         <Logo />
 
         <Flex alignItems="center">

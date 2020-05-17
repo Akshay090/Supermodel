@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <Stack>
           <Heading
-            fontSize="3rem"
+            fontSize={["3xl","3xl","3xl","6xl"]}
             fontWeight="bold"
             textAlign="left"
             color={colorMode === "light" ? "black" : "white"}
@@ -43,7 +43,7 @@ const Hero = () => {
           </Text>
         </Stack>
         <Image
-          height={["15rem", "15rem", "25rem", "25rem"]}
+          height={["15rem", "15rem", "30rem", "30rem"]}
           max-width="48rem"
           pt="2rem"
           src="https://res.cloudinary.com/supermodel/image/upload/v1589546581/Supermodel_website_assets/hero_img_yxyeru.svg"
