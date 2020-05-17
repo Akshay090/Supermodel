@@ -1,8 +1,10 @@
 import React from 'react'
 import NextApp from 'next/app'
-import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core'
+import { ThemeProvider, CSSReset, ColorModeProvider, Box, Flex } from '@chakra-ui/core'
 
 import theme from '../theme'
+
+const Layout = ({ children }) => <Flex flexDir="column" alignItems="center" minH="100vh">{children}</Flex>;
 
 class App extends NextApp {
   render() {
@@ -11,7 +13,9 @@ class App extends NextApp {
       <ThemeProvider theme={theme}>
         <CSSReset />
         <ColorModeProvider>
+          <Layout>
           <Component />
+          </Layout>
         </ColorModeProvider>
       </ThemeProvider>
     )

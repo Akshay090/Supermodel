@@ -2,13 +2,13 @@ import React from "react";
 import { withTheme } from "emotion-theming";
 import Navbar from "../components/navbar";
 import Hero from "../components/hero";
-import { Box } from "@chakra-ui/core";
+import { Flex } from "@chakra-ui/core";
 
 const Index = () => (
-  <Box>
+  <Flex flexDir="column" flex="1">
     <Navbar />
     <Hero />
-  </Box>
+  </Flex>
 );
 
 export default withTheme(Index);

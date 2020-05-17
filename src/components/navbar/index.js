@@ -13,7 +13,7 @@ import Logo from "../logo";
 
 const Navbar = (props) => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = { light: "white", dark: "gray.800" };
+  const bg = { light: "#faeded", dark: "gray.800" };
 
   return (
     <Header bg={bg[colorMode]} {...props}>
@@ -42,7 +42,7 @@ const Navbar = (props) => {
 export const Header = (props) => (
   <Box
     as="header"
-    borderBottomWidth="1px"
+    // borderBottomWidth="1px"
     width="full"
     height="4rem"
     {...props}
