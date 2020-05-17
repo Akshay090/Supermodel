@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 function HeroImage(props) {
   return (
@@ -653,7 +653,7 @@ function HeroImage(props) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
-export default HeroImage
+export default HeroImage;
