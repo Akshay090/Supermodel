@@ -9,6 +9,7 @@ import {
   Button,
   IconButton,
 } from "@chakra-ui/core";
+import Logo from "../logo";
 
 const Navbar = (props) => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -17,23 +18,7 @@ const Navbar = (props) => {
   return (
     <Header bg={bg[colorMode]} {...props}>
       <Flex size="100%" px="6" align="center" justify="space-between">
-        <Flex align="center" mr={5}>
-          <Image
-            height="3rem"
-            width="3rem"
-            src="https://res.cloudinary.com/supermodel/image/upload/v1589546614/Group_6_fl94zk.svg"
-          />
-          <Text
-            display="inline"
-            fontWeight="bold"
-            ml=".5rem"
-            fontSize="2rem"
-            fontStyle="italic"
-            color={colorMode === 'light' ? "black" : "white"}
-          >
-            Supermodel
-          </Text>
-        </Flex>
+        <Logo />
 
         <Flex alignItems="center">
           <Button variantColor="green" rounded="2rem">
@@ -46,7 +31,7 @@ const Navbar = (props) => {
             } mode`}
             onClick={toggleColorMode}
             icon={colorMode === "light" ? "moon" : "sun"}
-            color={colorMode === 'light' ? "black" : "white"}
+            color={colorMode === "light" ? "black" : "white"}
           />
         </Flex>
       </Flex>
@@ -65,12 +50,7 @@ export const Header = (props) => (
 );
 
 const ThemeSwitch = (props) => (
-  <IconButton
-    variant="ghost"
-    ml="2"
-    fontSize="20px"
-    {...props}
-  />
+  <IconButton variant="ghost" ml="2" fontSize="20px" {...props} />
 );
 
 export default Navbar;
